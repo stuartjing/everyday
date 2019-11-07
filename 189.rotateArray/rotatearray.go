@@ -16,19 +16,25 @@ func rotate(nums []int, k int)  {
     var nums1 []int = make([]int,length) 
     var j int = 0
     var t int = 0
-    for i:=length-1;i>=0;i--{
-        if (k -1) >=j {
-            nums1[k-1-j]=nums[i]
-        }else{
-            nums1[length-1-t]=nums[i]
-            t++
+    
+   if length != 1{
+        if k>length{
+            k = k-length
         }
-        j++
+        for i:=length-1;i>=0;i--{
+            if (k -1) >=j {
+                nums1[k-1-j]=nums[i]
+            }else{
+                nums1[length-1-t]=nums[i]
+                t++
+            }
+            j++
+        }
+        for tt,v:=range nums1{
+            fmt.Println(tt,v)
+            nums[tt] = v
+        }
     }
-    for tt,v:=range nums1{
-        fmt.Println(tt,v)
-        nums[tt] = v
-    }
-fmt.Println(nums)
+    fmt.Println(nums)
 }
 
