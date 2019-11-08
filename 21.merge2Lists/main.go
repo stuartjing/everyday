@@ -11,7 +11,7 @@ type ListNode struct {
 
 func main() {
 
-	var datas []int = []int{-9, 3}
+	var datas []int = []int{1, 2, 3}
 
 	l1 := &ListNode{datas[0], nil}
 	l1Node := l1
