@@ -15,9 +15,6 @@ func main() {
 * 使用倒序方式 m+n-1
  */
 func merge(nums1 []int, m int, nums2 []int, n int) {
-	if len(nums1) == 0 || len(nums2) == 0 {
-
-	}
 
 	for {
 		if m == 0 || n == 0 {
