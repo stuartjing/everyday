@@ -62,7 +62,7 @@ func mergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {
 
 	for {
 		if l1 != nil {
-			info[l1.Val] = info[l1.Val] + 1
+			info[l1.Val] += 1
 			if l1.Val > maxvalue {
 				maxvalue = l1.Val
 			}
@@ -73,7 +73,7 @@ func mergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {
 	}
 	for {
 		if l2 != nil {
-			info[l2.Val] = info[l2.Val] + 1
+			info[l2.Val] += 1
 			if l2.Val > maxvalue {
 				maxvalue = l2.Val
 			}
